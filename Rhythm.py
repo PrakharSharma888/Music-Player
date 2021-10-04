@@ -37,13 +37,6 @@ def browsesong():  # function to browse song to play
     filename_path = filedialog.askopenfilename()  # to make the New song submenu work and find for songs
     add_to_playlist(filename_path)
 
-def add_to_playlist(filename):
-    filename= os.path.basename(filename)
-    index= 0
-    Playlistbox.insert(index, filename)
-    playlist.insert(index,filename_path)
-    index += 1
-
 
 menubar.add_cascade(label="File", menu=submenu)  # to add a submenu now and cascade means dropdown bar
 submenu.add_command(label="New Song", command=browsesong)  # to make a option inside submenu
