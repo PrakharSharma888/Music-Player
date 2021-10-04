@@ -4,10 +4,7 @@ from tkinter import filedialog  # Importing module class
 import tkinter.messagebox  # same
 from pygame import mixer
 from mutagen.mp3 import MP3
-import time
-import threading
-from tkinter import ttk
-from ttkthemes import themed_tk as tk
+
 
 root = tk.ThemedTk()  # This Tk func creates a window and stores it in variable root
 root.get_themes()
